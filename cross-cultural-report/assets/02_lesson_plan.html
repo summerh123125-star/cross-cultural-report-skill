@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Plan — Fill-in Form</title>
+<style>
+  @page { size: Letter; margin: 0.55in; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#eef1f5;color:#1f2430;font-family:"Segoe UI",Arial,sans-serif;font-size:14px}
+  .page{width:8.5in;min-height:11in;margin:24px auto;background:#fff;padding:0.55in;box-shadow:0 2px 14px rgba(0,0,0,.12)}
+  .toolbar{width:8.5in;margin:16px auto 0;display:flex;gap:8px;justify-content:flex-end}
+  .toolbar button{background:#2f6f6b;color:#fff;border:0;border-radius:7px;padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer}
+  .toolbar button.ghost{background:#fff;color:#2f6f6b;border:1px solid #2f6f6b}
+  h1{text-align:center;font-size:32px;font-weight:800;font-style:italic;text-decoration:underline;margin:0 0 6px}
+  .cap{font-style:italic;font-weight:600;font-size:13px;margin:14px 0 4px}
+  table{width:100%;border-collapse:collapse;table-layout:fixed}
+  td,th{border:1.5px solid #333;padding:8px 10px;vertical-align:top}
+  .edit{outline:none;min-height:44px}
+  .edit:focus{background:#fbfdfd}
+  [contenteditable]:empty:before{content:attr(data-ph);color:#b8bec8;font-style:italic;font-weight:400}
+  .two td{width:50%}
+  @media print{body{background:#fff}.page{box-shadow:none;margin:0;width:auto;min-height:auto;padding:0}.toolbar{display:none}}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button class="ghost" onclick="window.print()">Print / Save as PDF</button>
+  <button onclick="location.reload()">Clear Form</button>
+</div>
+<div class="page">
+  <h1>Lesson Plan</h1>
+
+  <div class="cap">Lesson Focus/Goals:</div>
+  <table><tr><td><div class="edit" contenteditable="true" data-ph="What students will learn (e.g., Students will learn about the home-country flag and all that it symbolizes)"></div></td></tr></table>
+
+  <div class="cap">Materials Needed &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Learning Objectives:</div>
+  <table class="two"><tr>
+    <td><div class="edit" contenteditable="true" data-ph="Technology, slideshow or video, handouts, craft supplies…"></div></td>
+    <td><div class="edit" contenteditable="true" data-ph="What students will be able to do by the end of the lesson"></div></td>
+  </tr></table>
+
+  <div class="cap">Structure/Activities:</div>
+  <table>
+    <tr><td><b>Preparation:</b><div class="edit" contenteditable="true" data-ph="Describe how you prepared an age-appropriate lesson"></div></td></tr>
+    <tr><td><b>Action:</b><div class="edit" contenteditable="true" data-ph="Describe what students did (e.g., research and recreate a cultural item so they understand its importance and significance)"></div></td></tr>
+    <tr><td><b>Reflection:</b><div class="edit" contenteditable="true" data-ph="Did students find an understanding and appreciation for your home country?"></div></td></tr>
+  </table>
+
+  <div class="cap">Assessment:</div>
+  <table><tr><td><div class="edit" contenteditable="true" data-ph="How was this impactful? Evidence of student learning"></div></td></tr></table>
+
+  <p style="margin-top:24px;color:#5b6472;font-size:12px">
+    Type directly into the grey areas. Use <b>Print / Save as PDF</b> to attach to your report.
+  </p>
+</div>
+</body>
+</html>

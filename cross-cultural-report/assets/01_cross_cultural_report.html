@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cross-Cultural Report — Fill-in Form</title>
+<style>
+  @page { size: Letter; margin: 0.55in; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#eef1f5;color:#1f2430;font-family:"Segoe UI",Arial,sans-serif;font-size:14px}
+  .page{width:8.5in;min-height:11in;margin:24px auto;background:#fff;padding:0.55in;
+    box-shadow:0 2px 14px rgba(0,0,0,.12)}
+  .toolbar{width:8.5in;margin:16px auto 0;display:flex;gap:8px;justify-content:flex-end}
+  .toolbar button{background:#2f6f6b;color:#fff;border:0;border-radius:7px;padding:8px 14px;
+    font-size:13px;font-weight:600;cursor:pointer}
+  .toolbar button.ghost{background:#fff;color:#2f6f6b;border:1px solid #2f6f6b}
+  h1{text-align:center;font-size:30px;text-decoration:underline;margin:0 0 22px;letter-spacing:.5px}
+  table{width:100%;border-collapse:collapse;table-layout:fixed}
+  td{border:1.5px solid #333;padding:7px 10px;height:46px;vertical-align:middle}
+  .lbl{font-weight:600;white-space:nowrap}
+  .hint{color:#9aa2ae;font-size:11px;font-weight:400;font-style:italic}
+  [contenteditable]:empty:before{content:attr(data-ph);color:#b8bec8}
+  .editable{outline:none;min-height:20px}
+  .editable:focus{background:#fbfdfd}
+  .center{text-align:center}
+  @media print{body{background:#fff}.page{box-shadow:none;margin:0;width:auto;min-height:auto;padding:0}.toolbar{display:none}}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button class="ghost" onclick="window.print()">Print / Save as PDF</button>
+  <button onclick="location.reload()">Clear Form</button>
+</div>
+<div class="page">
+  <h1>Cross-Cultural Report</h1>
+  <table>
+    <tr>
+      <td style="width:50%"><span class="lbl">Teacher:</span><br><span class="editable" contenteditable="true" data-ph="Full name as in program records"></span></td>
+      <td style="width:50%"><span class="lbl">Location:</span><br><span class="editable" contenteditable="true" data-ph="e.g., Campus / school name"></span></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="center"><span class="lbl">Sponsor:</span> Global Ambassador Programs</td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Grade:</span><br><span class="editable" contenteditable="true" data-ph="e.g., 7–8"></span></td>
+      <td><span class="lbl">Subject:</span><br><span class="editable" contenteditable="true" data-ph="e.g., Mandarin"></span></td>
+    </tr>
+    <tr>
+      <td colspan="2"><span class="lbl">Activity Date:</span> <span class="hint">(Month/Day/Year)</span><br><span class="editable" contenteditable="true" data-ph="MM/DD/YYYY"></span></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Topic:</span><br><span class="editable" contenteditable="true" data-ph="e.g., Cultural Symbols"></span></td>
+      <td><span class="lbl">Lesson:</span><br><span class="editable" contenteditable="true" data-ph="e.g., All About the Flag"></span></td>
+    </tr>
+    <tr>
+      <td><span class="lbl">Type of Exchange:</span><br><span class="editable" contenteditable="true" data-ph="Domestic/Local Exchange  or  Virtual Exchange"></span></td>
+      <td><span class="lbl">Target Audience:</span><br><span class="editable" contenteditable="true" data-ph="e.g., Campus / Community"></span></td>
+    </tr>
+  </table>
+  <p style="margin-top:26px;color:#5b6472;font-size:12px">
+    Fill in every field, then use <b>Print / Save as PDF</b> to submit. Prepare one cover sheet for each activity.
+  </p>
+</div>
+</body>
+</html>

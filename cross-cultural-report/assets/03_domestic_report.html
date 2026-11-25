@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domestic Cross-Cultural Activity Report — Fill-in Form</title>
+<style>
+  @page { size: Letter; margin: 0.55in; }
+  *{box-sizing:border-box}
+  body{margin:0;background:#eef1f5;color:#1f2430;font-family:"Segoe UI",Arial,sans-serif;font-size:13.5px}
+  .page{width:8.5in;min-height:11in;margin:24px auto;background:#fff;padding:0.55in;box-shadow:0 2px 14px rgba(0,0,0,.12)}
+  .toolbar{width:8.5in;margin:16px auto 0;display:flex;gap:8px;justify-content:flex-end}
+  .toolbar button{background:#2f6f6b;color:#fff;border:0;border-radius:7px;padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer}
+  .toolbar button.ghost{background:#fff;color:#2f6f6b;border:1px solid #2f6f6b}
+  h1{text-align:center;font-size:26px;text-decoration:underline;margin:0 0 18px}
+  h2{font-size:20px;text-align:center;margin:0 0 12px}
+  table{width:100%;border-collapse:collapse;table-layout:fixed;margin-bottom:14px}
+  td,th{border:1.4px solid #333;padding:7px 9px;vertical-align:top}
+  .lbl{font-weight:600}
+  .edit{outline:none;min-height:34px}
+  .edit:focus{background:#fbfdfd}
+  [contenteditable]:empty:before{content:attr(data-ph);color:#b8bec8;font-style:italic;font-weight:400}
+  .q{font-weight:600;font-size:14px;margin:16px 0 6px}
+  .sub{color:#b23a2e;font-weight:600}
+  .hint{color:#9aa2ae;font-size:11px;font-style:italic}
+  .big{min-height:96px}
+  .cap{margin-top:8px}
+  @media print{body{background:#fff}.page{box-shadow:none;margin:0;width:auto;min-height:auto;padding:0}.toolbar{display:none}}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button class="ghost" onclick="window.print()">Print / Save as PDF</button>
+  <button onclick="location.reload()">Clear Form</button>
+</div>
+<div class="page">
+  <h1>Cross-Cultural Activity Report</h1>
+
+  <table>
+    <tr><td style="width:50%"><span class="lbl">Teacher Name:</span><div class="edit" contenteditable="true" data-ph="Full name"></div></td>
+        <td style="width:50%"><span class="lbl">Sponsor:</span><div class="edit" contenteditable="true" data-ph="Global Ambassador Programs"></div></td></tr>
+    <tr><td><span class="lbl">Type/Name of Activity:</span><div class="edit" contenteditable="true" data-ph="e.g., Chinese Zodiac Song & Calligraphy"></div></td>
+        <td><span class="lbl">Type of Exchange Activity:</span><div class="edit" contenteditable="true" data-ph="e.g., Cultural games with peers"></div></td></tr>
+    <tr><td><span class="lbl">Date of Activity:</span><div class="edit" contenteditable="true" data-ph="MM/DD/YYYY"></div></td>
+        <td><span class="lbl">Location:</span><div class="edit" contenteditable="true" data-ph="School name + room"></div></td></tr>
+  </table>
+  <p class="hint" style="margin-top:-6px">Include pictures (optional) — paste images here and add a caption under each one.</p>
+  <div class="edit big" contenteditable="true" data-ph="[Picture placeholders + captions]"></div>
+
+  <div class="q">1. Provide a general overview of this cross-cultural activity, including topic and resources used.</div>
+  <div class="edit big" contenteditable="true" data-ph="What the activity was, who took part, topic, and materials/resources used"></div>
+
+  <div class="q">2. What was the estimated impact of this cross-cultural activity?</div>
+  <p class="hint" style="margin:2px 0">The estimated impact on the audience and on you as a J-1 teacher.</p>
+  <div class="edit big" contenteditable="true" data-ph="Include participant numbers, student responses, and impact on you"></div>
+
+  <div class="q">3. Do you have a lesson plan from this activity that you would like to share for our Teacher Resource library?</div>
+  <table>
+    <tr><td><span class="sub">Learning Objectives:</span><div class="edit" contenteditable="true" data-ph="What students will learn"></div></td></tr>
+    <tr><td><span class="sub">Introduction (___ minutes):</span><div class="edit" contenteditable="true" data-ph="How the topic was introduced"></div></td></tr>
+    <tr><td><span class="sub">Explicit Instruction/teacher modeling (___ minutes):</span><div class="edit" contenteditable="true" data-ph="Teacher demonstration and modeling"></div></td></tr>
+    <tr><td><span class="sub">Assessment (___ minutes):</span><div class="edit" contenteditable="true" data-ph="How student learning was assessed"></div></td></tr>
+  </table>
+
+  <div class="q">4. Any other thoughts, suggestions, or feedback on cross-cultural activities?</div>
+  <div class="edit big" contenteditable="true" data-ph="Optional reflections or suggestions"></div>
+
+  <p style="margin-top:20px;color:#5b6472;font-size:12px">
+    Type into the grey areas, then use <b>Print / Save as PDF</b> to submit together with your lesson plan as one PDF.
+  </p>
+</div>
+</body>
+</html>
